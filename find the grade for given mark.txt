@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Hello
+{
+    public static void main(String args[])
+    {
+        Scanner s= new Scanner(System.in);
+        int n = s.nextInt();
+        if(n>=96 && n<=100)
+        {
+        System.out.print("O");
+    }
+    else if(n>=90 && n<=95){
+        System.out.print("A+");
+    }
+    else if(n>81 && n<=90){
+        System.out.print("A");
+    }
+    else if(n>=71 && n<=80){
+        System.out.print("B+");
+    }
+    else if(n>61 && n<=70){
+        System.out.print("B");
+    }
+    else if(n>=56 && n<=60){
+        System.out.print("C+");
+    }
+    else if(n>=50 && n<=50){
+        System.out.print("C");
+    }
+    else{
+        System.out.print("RA");
+    }
+    }
+
+}
+        
