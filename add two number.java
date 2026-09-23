@@ -1,20 +1,20 @@
-class Solution {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-       ListNode dummy=new ListNode(0);
-       ListNode cur=dummy;
-       int carry=0;
-       while(l1 !=null || l2!=null){
-       int a = (l1 !=null) ? l1.val : 0;
-       int b=(l2!=null) ? l2.val : 0;
-       int sum=a+b+carry;
-       cur.next=new ListNode(sum%10);
-       carry=sum/10;
-       cur=cur.next;
-       if(l1!=null) l1=l1.next;
-       if(l2 !=null) l2=l2.next;
-    }
-    if(carry>0)
-    cur.next=new ListNode(carry);
-    return dummy.next; 
-    }
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+class Codechef
+{
+	public static void main (String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		while(t-->0)
+		{
+    		int a = sc.nextInt();
+    		int b = sc.nextInt();
+    	System.out.println(a+b);
+		}
+		
+	}
 }
